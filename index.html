@@ -1,7 +1,8 @@
-<!DOCTYPE html>
+=<!DOCTYPE html>
 <html lang="en">
 
 <head>
+  <title>Atlas & Lens - Contact</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Bootstrap Styles -->
@@ -51,7 +52,8 @@
             <div class="testimonial-number">Testimonial 1</div>
             <div class="testimonial-image">
               <img
-                src="https://images.pexels.com/photos/265856/pexels-photo-265856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+                src="https://images.pexels.com/photos/265856/pexels-photo-265856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="wedding rings">
             </div>
             <div class="testimonial-content">
               <p class="testimonial-text">"The photos of our wedding are magnificent. Each moment was captured
@@ -88,7 +90,8 @@
             </div>
             <div class="testimonial-image">
               <img
-                src="https://images.pexels.com/photos/265856/pexels-photo-265856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+                src="https://images.pexels.com/photos/265856/pexels-photo-265856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="wedding rings">
             </div>
           </div>
         </div>
@@ -112,27 +115,37 @@
           </div>
 
           <div class="form-group mb-4">
-            <p class="small-heading">SESSION TYPE *</p>
-            <div class="radio-options">
+            <p class="small-heading" id="sessionTypeLabel">SESSION TYPE *</p>
+            <div class="radio-options" role="radiogroup" aria-labelledby="sessionTypeLabel">
+              <!-- Wedding option -->
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="sessionType" id="wedding" value="Wedding">
-                <span class="radio-text">Wedding</span>
+                <input class="form-check-input" type="radio" name="sessionType" id="wedding" value="Wedding"
+                  aria-labelledby="label-wedding">
+                <label class="radio-text" id="label-wedding" for="wedding">Wedding</label>
               </div>
+              <!-- Engagement option -->
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="sessionType" id="engagement" value="Engagement">
-                <span class="radio-text">Engagement</span>
+                <input class="form-check-input" type="radio" name="sessionType" id="engagement" value="Engagement"
+                  aria-labelledby="label-engagement">
+                <label class="radio-text" id="label-engagement" for="engagement">Engagement</label>
               </div>
+              <!-- Editorial option -->
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="sessionType" id="editorial" value="Editorial">
-                <span class="radio-text">Editorial</span>
+                <input class="form-check-input" type="radio" name="sessionType" id="editorial" value="Editorial"
+                  aria-labelledby="label-editorial">
+                <label class="radio-text" id="label-editorial" for="editorial">Editorial</label>
               </div>
+              <!-- Lifestyle option -->
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="sessionType" id="lifestyle" value="Lifestyle">
-                <span class="radio-text">Lifestyle</span>
+                <input class="form-check-input" type="radio" name="sessionType" id="lifestyle" value="Lifestyle"
+                  aria-labelledby="label-lifestyle">
+                <label class="radio-text" id="label-lifestyle" for="lifestyle">Lifestyle</label>
               </div>
+              <!-- Other option -->
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="sessionType" id="other" value="Other">
-                <span class="radio-text">Other</span>
+                <input class="form-check-input" type="radio" name="sessionType" id="other" value="Other"
+                  aria-labelledby="label-other">
+                <label class="radio-text" id="label-other" for="other">Other</label>
               </div>
             </div>
           </div>
@@ -142,14 +155,15 @@
           </div>
 
           <div class="form-group mb-4">
+            <label>How did you hear about me?
             <select class="form-select" id="hearAbout">
-              <option selected disabled>How did you hear about me?</option>
               <option value="google">Google</option>
               <option value="instagram">Instagram</option>
               <option value="facebook">Facebook</option>
               <option value="referral">Referral</option>
               <option value="other">Other</option>
             </select>
+            </label>
           </div>
 
           <div class="form-group mb-4">
@@ -158,7 +172,7 @@
           </div>
 
           <div class="text-center mt-4">
-            <button type="submit" class="btn btn-outline-dark"> <i class="bi bi-send"></i> </button>
+            <button type="submit" class="btn btn-outline-dark"> Send <i class="bi bi-send"></i> </button>
           </div>
         </div>
       </div>
